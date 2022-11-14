@@ -1,7 +1,4 @@
-import { Navbar, Button, Link, Text, Image, Input } from "@nextui-org/react";
-
-// Icons
-import { SearchIcon } from "./SearchIcon.js";
+import { Navbar, Button, Link, Text, Image } from "@nextui-org/react";
 
 // Style
 import styles from "./Header.module.css";
@@ -33,25 +30,6 @@ const Header = () => {
         </Text>
       </Navbar.Brand>
       <Navbar.Content>
-        <Input
-          clearable
-          contentLeft={
-            <SearchIcon fill="var(--nextui-colors-accents6)" size={16} />
-          }
-          contentLeftStyling={false}
-          css={{
-            w: "100%",
-            "@xsMax": {
-              mw: "300px",
-            },
-            "& .nextui-input-content--left": {
-              h: "100%",
-              ml: "$4",
-              dflex: "center",
-            },
-          }}
-          placeholder="Search..."
-        />
         <Navbar.Link color="inherit" href="#">
           Login
         </Navbar.Link>

@@ -99,7 +99,7 @@ export default function Home({ info }) {
               Crear categoría
             </Button>
           </div>
-          {data.length !== 0 ? (
+          {data ? (
             data.map(
               ({
                 id: idCategory,
@@ -152,7 +152,7 @@ export default function Home({ info }) {
                     </Grid.Container>
                   </div>
                   <div className={styles.containerCard}>
-                    {value?.length !== 0 &&
+                    {value &&
                       value.map(
                         ({
                           id: idPage,
