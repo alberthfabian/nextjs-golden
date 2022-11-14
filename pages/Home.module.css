@@ -1,0 +1,59 @@
+.content {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.containerCard {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.collapseGroup {
+  padding: 0;
+}
+
+.collapse {
+  background-color: red;
+}
+
+.containerLoad {
+  display: flex;
+  justify-content: center;
+}
+
+.hoverDelete:hover {
+  background-color: #ffe1e9;
+}
+
+.hoverEdit:hover {
+  background-color: #dffee4;
+}
+
+.containerCategory {
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .containerCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .containerCard {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .containerCard {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .containerCard {
+    grid-template-columns: auto auto auto auto auto;
+  }
+}

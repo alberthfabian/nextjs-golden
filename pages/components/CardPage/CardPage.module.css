@@ -1,0 +1,20 @@
+.value {
+  display: flex;
+  align-items: center;
+}
+
+.valueTitle {
+  margin-right: 10px;
+}
+
+.btnDelete {
+  margin-right: 10px;
+}
+
+.hoverDelete:hover {
+  background-color: #ffe1e9;
+}
+
+.hoverEdit:hover {
+  background-color: #dffee4;
+}
